@@ -41,9 +41,7 @@ function Home() {
           <ListGroup>
             {users.map((user) => (
               <ListGroup.Item>
-                <Card.Body>
-                  <Link to={`/users/${user.name}`}>{user.name}</Link>
-                </Card.Body>
+                <Card.Body>{user.name}</Card.Body>
               </ListGroup.Item>
             ))}
           </ListGroup>
